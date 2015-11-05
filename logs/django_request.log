@@ -1,0 +1,619 @@
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Internal Server Error: /hs/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 11, in index
+    return render(request, 'hs/index.html')
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/shortcuts.py", line 50, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 162, in compile_string
+    return parser.parse()
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 1119, in load
+    (taglib, e))
+TemplateSyntaxError: 'bootstrap3' is not a valid tag library: Template library bootstrap3 not found, tried django.templatetags.bootstrap3,django.contrib.admin.templatetags.bootstrap3,django.contrib.staticfiles.templatetags.bootstrap3
+Internal Server Error: /hs/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 11, in index
+    return render(request, 'hs/index.html')
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/shortcuts.py", line 50, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 162, in compile_string
+    return parser.parse()
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 1119, in load
+    (taglib, e))
+TemplateSyntaxError: 'bootstrap3' is not a valid tag library: Template library bootstrap3 not found, tried django.templatetags.bootstrap3,django.contrib.admin.templatetags.bootstrap3,django.contrib.staticfiles.templatetags.bootstrap3
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /hs/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 11, in index
+    return render(request, 'hs/index.html')
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/shortcuts.py", line 50, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 174, in render_to_string
+    return t.render(context_instance)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 148, in render
+    return self._render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 104, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 101, in get_parent
+    return get_template(parent)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 136, in find_template
+    raise TemplateDoesNotExist(name)
+django.template.base.TemplateDoesNotExist: hs/base-site.html
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /hs/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 11, in index
+    return render(request, 'hs/index.html')
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/shortcuts.py", line 50, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 162, in compile_string
+    return parser.parse()
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 201, in do_extends
+    nodelist = parser.parse()
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 175, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 1345, in url
+    viewname = parser.compile_filter(bits[1])
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 372, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 588, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.base.TemplateSyntaxError: Could not parse the remainder: ':rank' from 'hs:rank'
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /apple-touch-icon-120x120-precomposed.png
+Not Found: /apple-touch-icon-120x120.png
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /hs/admin
+Not Found: /hs/admin
+Not Found: /
+Not Found: /
+Internal Server Error: /hs/rank/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 17, in rank
+    return render(request, 'hs/rank.html', context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/shortcuts.py", line 50, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 148, in render
+    return self._render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 458, in render
+    six.reraise(*exc_info)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 444, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'new_attack_function' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+Internal Server Error: /hs/rank/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 17, in rank
+    return render(request, 'hs/rank.html', context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/shortcuts.py", line 50, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 148, in render
+    return self._render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 458, in render
+    six.reraise(*exc_info)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 444, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'new_attack_function' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+Not Found: /hs/rank/new-attack
+Not Found: /hs/rank/new_attack
+Internal Server Error: /hs/rank/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 17, in rank
+    return render(request, 'hs/rank.html', context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/shortcuts.py", line 50, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 148, in render
+    return self._render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 458, in render
+    six.reraise(*exc_info)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 444, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'new_attack_function' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+Not Found: /favicon.ico
+Not Found: /hs/new_attack_function/
+Internal Server Error: /hs/new_attack/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 537, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'esports.hs'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 452, in render
+    current_app=context.current_app)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 547, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'esports.hs' is not a registered namespace
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 46, in new_attack
+    return new_attack_site(request, 'Invalid Input! Please try again!')
+  File "/home/mark/mywww/esports/hs/views.py", line 34, in new_attack_site
+    return render(request, 'hs/new_attack.html', context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/shortcuts.py", line 50, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 148, in render
+    return self._render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 458, in render
+    six.reraise(*exc_info)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/six.py", line 659, in reraise
+    raise value
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 444, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+django.core.urlresolvers.NoReverseMatch: Reverse for 'new_attack_function' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Internal Server Error: /hs/new_attack/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 46, in new_attack
+    return new_attack_site(request, 'Invalid Input! Please try again!')
+  File "/home/mark/mywww/esports/hs/views.py", line 34, in new_attack_site
+    return render(request, 'hs/new_attack.html', context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/shortcuts.py", line 50, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 148, in render
+    return self._render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 458, in render
+    six.reraise(*exc_info)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 444, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'new_attack_post' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+Not Found: /favicon.ico
+Internal Server Error: /hs/new_attack/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 46, in new_attack
+    return new_attack_site(request, 'Invalid Input! Please try again!')
+  File "/home/mark/mywww/esports/hs/views.py", line 34, in new_attack_site
+    return render(request, 'hs/new_attack.html', context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/shortcuts.py", line 50, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 148, in render
+    return self._render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 458, in render
+    six.reraise(*exc_info)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 444, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'new_attack_post' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /hs/new_attack_post/
+Traceback (most recent call last):
+  File "/home/mark/mywww/esports/hs/views.py", line 42, in new_attack_post
+    raise KeyError
+KeyError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 49, in new_attack_post
+    return render_to_response(request, 'hs/new_attack.html', context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/shortcuts.py", line 25, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 136, in find_template
+    raise TemplateDoesNotExist(name)
+django.template.base.TemplateDoesNotExist: <WSGIRequest
+path:/hs/new_attack_post/,
+GET:<QueryDict: {}>,
+POST:{'attacker': '2',
+ 'csrfmiddlewaretoken': 'P4dhdPCjwViHJy53MTk3Kqjoh4gfanpM',
+ 'defender': '2'},
+COOKIES:{'csrftoken': 'P4dhdPCjwViHJy53MTk3Kqjoh4gfanpM',
+ 'sessionid': '4n1x2m2rm6amzemvkg4iil5bo6jzpivo'},
+META:{'CONTENT_LENGTH': '74',
+ 'CONTENT_TYPE': 'application/x-www-form-urlencoded',
+ 'CSRF_COOKIE': 'P4dhdPCjwViHJy53MTk3Kqjoh4gfanpM',
+ 'DJANGO_SETTINGS_MODULE': 'esports.settings',
+ 'GATEWAY_INTERFACE': 'CGI/1.1',
+ 'HOME': '/home/mark',
+ 'HTTP_ACCEPT': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+ 'HTTP_ACCEPT_ENCODING': 'gzip, deflate',
+ 'HTTP_ACCEPT_LANGUAGE': 'zh-CN,zh;q=0.8,en;q=0.6',
+ 'HTTP_CACHE_CONTROL': 'max-age=0',
+ 'HTTP_CONNECTION': 'keep-alive',
+ 'HTTP_COOKIE': 'sessionid=4n1x2m2rm6amzemvkg4iil5bo6jzpivo; '
+                'csrftoken=P4dhdPCjwViHJy53MTk3Kqjoh4gfanpM',
+ 'HTTP_DNT': '1',
+ 'HTTP_HOST': '106.187.95.211:25565',
+ 'HTTP_ORIGIN': 'http://106.187.95.211:25565',
+ 'HTTP_REFERER': 'http://106.187.95.211:25565/hs/rank/',
+ 'HTTP_USER_AGENT': 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 '
+                    '(KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36',
+ 'JETBRAINS_REMOTE_RUN': '1',
+ 'LANG': 'en_US.UTF-8',
+ 'LOGNAME': 'mark',
+ 'MAIL': '/var/mail/mark',
+ 'OLDPWD': '/home/mark',
+ 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games',
+ 'PATH_INFO': '/hs/new_attack_post/',
+ 'PWD': '/home/mark/mywww/esports',
+ 'PYCHARM_HOSTED': '1',
+ 'PYTHONPATH': '/home/mark/mywww/esports',
+ 'PYTHONUNBUFFERED': '1',
+ 'QUERY_STRING': '',
+ 'REMOTE_ADDR': '223.255.241.124',
+ 'REMOTE_HOST': '',
+ 'REQUEST_METHOD': 'POST',
+ 'RUN_MAIN': 'true',
+ 'SCRIPT_NAME': '',
+ 'SERVER_NAME': 'www.markwu.me',
+ 'SERVER_PORT': '25565',
+ 'SERVER_PROTOCOL': 'HTTP/1.1',
+ 'SERVER_SOFTWARE': 'WSGIServer/0.2',
+ 'SHELL': '/bin/bash',
+ 'SHLVL': '1',
+ 'SSH_CLIENT': '223.255.241.124 1684 367',
+ 'SSH_CONNECTION': '223.255.241.124 1684 106.187.95.211 367',
+ 'SSH_TTY': '/dev/pts/0',
+ 'TERM': 'vt100',
+ 'TZ': 'Asia/Shanghai',
+ 'USER': 'mark',
+ 'XDG_RUNTIME_DIR': '/run/user/1000',
+ 'XDG_SESSION_ID': '155',
+ '_': '/usr/bin/env',
+ 'wsgi.errors': <_io.TextIOWrapper name='<stderr>' mode='w' encoding='UTF-8'>,
+ 'wsgi.file_wrapper': <class 'wsgiref.util.FileWrapper'>,
+ 'wsgi.input': <_io.BufferedReader name=10>,
+ 'wsgi.multiprocess': False,
+ 'wsgi.multithread': True,
+ 'wsgi.run_once': False,
+ 'wsgi.url_scheme': 'http',
+ 'wsgi.version': (1, 0)}>
+Not Found: /favicon.ico
+Not Found: /hs/new_attack_post/<django.http.response.HttpResponse object at 0x7ff4d393a080>
+Internal Server Error: /hs/new_attack/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: new_attack_site() missing 1 required positional argument: 'error_message'
+Internal Server Error: /hs/new_attack/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: new_attack_site() missing 1 required positional argument: 'error_message'
+Internal Server Error: /hs/new_attack_post/
+Traceback (most recent call last):
+  File "/home/mark/mywww/esports/hs/views.py", line 42, in new_attack_post
+    raise KeyError
+KeyError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 46, in new_attack_post
+    return HttpResponseRedirect(reverse('hs:new_attack_site', args=('Invalid Input',)))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+django.core.urlresolvers.NoReverseMatch: Reverse for 'new_attack_site' with arguments '('Invalid Input',)' and keyword arguments '{}' not found. 1 pattern(s) tried: ['hs/new_attack/$']
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico

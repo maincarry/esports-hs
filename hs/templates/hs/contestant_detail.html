@@ -1,0 +1,16 @@
+{% extends "hs/base-site.html" %}
+{% block title %}选手详情 -HS SCIE eSports Club{% endblock %}
+{% block jumbotron %}
+    <h2>炉石传说选手 {{ contestant.name }} 详细信息</h2>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <ul>
+            <li>Name: {{ contestant.name }}</li>
+            <li>ID: {{ contestant.id }}</li>
+            <li>Score: {{ contestant.score }}</li>
+        </ul>
+    </div>
+    <a class="btn btn-primary" href="javascript:history.go(-1);" role="button">Go Back</a>
+{% endblock %}

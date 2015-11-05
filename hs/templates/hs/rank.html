@@ -1,0 +1,53 @@
+{% extends "hs/base-site.html" %}
+{% block title %}实时排名 -HS SCIE eSports Club{% endblock %}
+{% block jumbotron %}
+    <h1>实时排名 - 炉石排位赛测试赛季</h1>
+    <p>挑战确认可能会有延迟，请选手在挑战结束后尽快告知工作人员挑战结果，谢谢。</p>
+    {% if latest_contestant_list %}
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for each in latest_contestant_list %}
+                    <tr>
+                        <th scope="row">{{ forloop.counter }}</th>
+                        <td><a href="{% url 'hs:contestant_detail' each.id %}">{{ each.name }}</a></td>
+                        <td>{{ each.score }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+    {% else %}
+        <p>No results are available.</p>
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+        <div class="row">
+            <h2>你好，{{ user.username }}。</h2>
+
+            <h3>你可以：</h3>
+            <ul>
+                <li>查看你当前的所有挑战 (<a href="{% url 'hs:contestant_my_index' %}">我的挑战</a>)</li>
+                <li>发起一个新的挑战 (<a href="{% url 'hs:new_attack' %}">发起挑战</a>)</li>
+            </ul>
+        </div>
+
+    {% else %}
+        <div class="row">
+            <h2>你好，登录之后才可以发起挑战。</h2>
+
+            <h3>请点击右上角Login登录。</h3>
+        </div>
+    {% endif %}
+
+{% endblock %}

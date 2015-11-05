@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+{% load staticfiles %}
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="HearthStone">
+    <meta name="author" content="eSports Club">
+    <!--<link rel="icon" href="../../favicon.ico">-->
+
+    <title>{% block title %}HearthStone Ranking{% endblock %}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static "hs/css/bootstrap.min.css" %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static "hs/hs_base.css" %}" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{% url 'hs:index' %}">炉石排位赛</a>
+        </div>
+        <!-- Other contents-->
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                {% if user.is_authenticated %}
+                    <li class="navbar-text">Hello, {{ user.username }}</li>
+                    <li><a href="{% url 'hs:contestant_my_index' %}">我的挑战</a></li>
+                    <li><a href="{% url 'hs:rank' %}">实时排名</a></li>
+                    <li><a href="{% url 'hs:new_attack' %}">发起挑战</a></li>
+                {% else %}
+                    <li class="navbar-text">Welcome. Please log in.</li>
+                {% endif %}
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                {% if user.is_authenticated %}
+                    <li><a href="{% url 'hs:logout' %}">Logout</a></li>
+                {% else %}
+                    <li><a href="{% url 'hs:login' %}">Login</a></li>
+                {% endif %}
+            </ul>
+
+        </div>
+        <!--/.navbar-collapse -->
+    </div>
+</nav>
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <div class="container">
+        {% block jumbotron %}
+            <h1>Hello, world!</h1>
+            <p>This is a template for a simple marketing or informational website. It includes a large callout called a
+                jumbotron and three supporting pieces of content. Use it as a starting point to create something more
+                unique.</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        {% endblock %}
+    </div>
+
+</div>
+
+<div class="container">
+    <!-- Example row of columns -->
+    {% block content %}
+        <div class="row">
+
+            <div class="col-md-4">
+                <h2>Heading</h2>
+
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+                    mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
+                    mollis euismod. Donec sed odio dui. </p>
+
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Heading</h2>
+
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+                    mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
+                    mollis euismod. Donec sed odio dui. </p>
+
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Heading</h2>
+
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula
+                    porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+                    ut fermentum massa justo sit amet risus.</p>
+
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            </div>
+
+        </div>
+    {% endblock %}
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2015 SCIE eSports Club (Development Version) <br> All Right Reserved.</p>
+    </footer>
+</div>
+<!-- /container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+<script src="{% static "hs/js/bootstrap.min.js" %}"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,27 @@
+{% extends "hs/base-site.html" %}
+{% load bootstrap3 %}
+
+{% block title %}确认挑战结果 -HS SCIE eSports Club{% endblock %}
+
+{% block jumbotron %}
+    <h2>请工作人员点击确认前再三检查，谢谢。</h2>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">选手已经完成挑战。</h3>
+        </div>
+        <div class="panel-body">
+            <form action="{% url 'hs:set_challenge_result' %}" method="post">
+                {% csrf_token %}
+                {% bootstrap_form form %}
+                {% buttons %}
+                    <button type="submit" class="btn btn-primary">同意提交</button>
+                {% endbuttons %}
+            </form>
+        </div>
+    </div>
+    </div>
+{% endblock %}

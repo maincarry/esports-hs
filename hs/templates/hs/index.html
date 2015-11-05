@@ -1,0 +1,39 @@
+{% extends "hs/base-site.html" %}
+{% block title %}炉石排位赛官方网站 -SCIE eSports Club{% endblock %}
+{% block jumbotron %}
+    <h1>炉石排位赛</h1>
+    <p>欢迎来到SCIE炉石传说排位赛官方网站。这里我们将提供比赛的实时资讯，即时排名，以及各类卡组信息，统计数据。大家，玩得开心。</p>
+    <p><a class="btn btn-primary btn-lg" href="{% url "hs:rank" %}" role="button">即刻加入 &raquo;</a></p>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-4">
+            <h2>即时排名</h2>
+
+            <p>炉石传说排位赛的排名由电竞社特别设计的一套积分算法生成，在保证公平的前提下最大程度的弥补了选手实力与牌组的差距，人人都能享受炉石的乐趣</p>
+
+            <p><a class="btn btn-default" href="{% url "hs:rank" %}" role="button">最新榜单 &raquo;</a></p>
+        </div>
+
+        <div class="col-md-4">
+            <h2>热门卡组</h2>
+
+            <p>一览大神使用的独家炉石传说排位赛卡组，看看哪些职业可以压制群雄，在九大职业中独占鳌头。
+                <small>本区将与正式赛季同步开放</small>
+            </p>
+            <p><a class="btn btn-default" href="#" role="button">敬请期待 &raquo;</a></p>
+        </div>
+
+        <div class="col-md-4">
+            <h2>逗逼卡组新玩法</h2>
+
+            <p>看我们的社员如何贯彻炉石“逗逼”的精髓：各种奇思妙想，各种新奇玩法，猛戳这里来作死。
+                <small>本区将与正式赛季同步开放</small>
+            </p>
+            <p><a class="btn btn-default" href="#" role="button">敬请期待 &raquo;</a></p>
+        </div>
+    </div>
+
+{% endblock %}
+

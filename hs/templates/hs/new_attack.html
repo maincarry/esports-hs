@@ -1,0 +1,29 @@
+{% extends "hs/base-site.html" %}
+{% load bootstrap3 %}
+
+{% block title %}发起挑战 -HS SCIE eSports Club{% endblock %}
+
+{% block jumbotron %}
+    <h2>发起炉石传说挑战，赛制为BO1，发起后请在一天内自行联系选手进行挑战。挑战完成后请将比赛截图发送给工作人员审核。</h2>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">I want to challenge somebody</h3>
+        </div>
+        <div class="panel-body">
+
+                <form action="{% url 'hs:new_attack' %}" method="post">
+                    {% csrf_token %}
+                    {% bootstrap_form form %}
+                    {% buttons %}
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    {% endbuttons %}
+                </form>
+
+        </div>
+    </div>
+    </div>
+{% endblock %}

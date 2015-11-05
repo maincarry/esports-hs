@@ -1,0 +1,13 @@
+{% extends "hs/base-site.html" %}
+{% block title %}登出成功 -HS SCIE eSports Club{% endblock %}
+
+{% block jumbotron %}
+    <h2>您已经成功登出。</h2>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <a class="btn btn-primary" href="{% url 'hs:index' %}" role="button">返回首页</a>
+        <a class="btn btn-default" href="{% url 'hs:login' %}" role="button">重新登录</a>
+    </div>
+{% endblock %}

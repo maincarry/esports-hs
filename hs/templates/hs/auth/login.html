@@ -1,0 +1,21 @@
+{% extends "hs/base-site.html" %}
+{% load bootstrap3 %}
+
+{% block title %}登录 -HS SCIE eSports Club{% endblock %}
+
+{% block jumbotron %}
+    <h2>欢迎登录炉石排位赛系统，请输入您的用户名与密码。</h2>
+    <h3>如果在登录中出现任何问题请及时联系电竞社工作人员。</h3>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <form action="{% url 'hs:login' %}" method="post">
+            {% csrf_token %}
+            {% bootstrap_form form %}
+            {% buttons %}
+                <button type="submit" class="btn btn-primary">Login</button>
+            {% endbuttons %}
+        </form>
+    </div>
+{% endblock %}

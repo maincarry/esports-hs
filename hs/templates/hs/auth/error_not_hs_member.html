@@ -1,0 +1,19 @@
+{% extends "hs/base-site.html" %}
+{% block title %}403 HTTP Forbidden -HS SCIE eSports Club{% endblock %}
+
+{% block jumbotron %}
+    <h1>403 无访问权限</h1>
+    <h2>本账户并不是一个有效的炉石传说排位赛账户。</h2>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <p>Here's what you can do:</p>
+        <ul>
+            <li>Login using a valid HearthStone account.</li>
+            <li>Contact staff in eSports Club if you have login issue.</li>
+        </ul>
+        <br/>
+        <a href="{% url 'hs:login' %}">Click here to Login</a>
+    </div>
+{% endblock %}

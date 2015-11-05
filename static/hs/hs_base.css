@@ -1,0 +1,12 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: "Microsoft YaHei", "Arial", "Verdana", "Tahoma";
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "Arial", "Verdana", "Tahoma";
+    font-weight: 500;
+}
+

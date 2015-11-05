@@ -1,0 +1,124 @@
+{% extends "hs/base-site.html" %}
+{% block title %}{{ user.contestant.name }}的主页 -HS SCIE eSports Club{% endblock %}
+{% load bootstrap3 %}
+
+{% block jumbotron %}
+    <h2>{{ user.contestant.name }}，欢迎回来。</h2>
+    <h3>你现在的排名是第 {{ user.contestant.position }} 名，分数为 {{ user.contestant.score }} ，继续加油！</h3>
+    <br/>
+    {% if defend_list.count != 0 %}
+        <div class="alert alert-warning" role="alert">
+            <p>你目前有{{ defend_list.count }}个等待防守的挑战</p>
+        </div>{% endif %}
+    {% if attack_list.count != 0 %}
+        <div class="alert alert-info" role="alert">
+            <p>你目前有{{ attack_list.count }}个需要进攻的挑战</p>
+        </div>{% endif %}
+
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <h3>当前挑战</h3>
+        {% if defend_list %}
+            {% for eachdefend in defend_list %}
+                <div class="panel panel-warning">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">DEFEND: No.{{ forloop.counter }}</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <li>Expire Date: {{ eachdefend.expire_date }}</li>
+                            <li>Attack By: <a
+                                    href="{% url 'hs:contestant_detail' eachdefend.attacker_id %}">{{ eachdefend.attacker.name }}</a>
+                            </li>
+                        </ul>
+                        <a class="btn btn-default" href="{% url 'hs:challenge_detail' eachdefend.id %}" role="button">More
+                            Info</a>
+                        <a class="btn btn-warning" href="{% url 'hs:set_challenge_result' eachdefend.id %}"
+                           role="button">Set Result</a>
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+
+        {% if attack_list %}
+            {% for eachattack in attack_list %}
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">ATTACK: No.{{ forloop.counter }}</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <li>Expire Date: {{ eachattack.expire_date }}</li>
+                            <li>Attack To: <a
+                                    href="{% url 'hs:contestant_detail' eachattack.defender_id %}">{{ eachattack.defender.name }}</a>
+                            </li>
+                        </ul>
+                        <a class="btn btn-default" href="{% url 'hs:challenge_detail' eachattack.id %}" role="button">More
+                            Info</a>
+
+                        <form method="post" action="{% url 'hs:set_challenge_result' %}">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <input type="hidden" class="form-control" name="in_challenge_id"
+                                       value="{{ eachattack.id }}" id="id_challenge_id"/>
+                            </div>
+                            <button type="submit" class="btn btn-warning">Set Result</button>
+                        </form>
+
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+
+    <div class="row">
+        <h3>最近三次挑战记录</h3>
+        {% if history_attack_list %}
+            {% for eachattack in history_attack_list %}
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">HISTORY ATTACK: No.{{ forloop.counter }}</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <li>Result: <strong>{{ eachattack.result }}</strong></li>
+                            <li>Expire Date: {{ eachattack.expire_date }}</li>
+                            <li>Attack To: <a
+                                    href="{% url 'hs:contestant_detail' eachattack.defender_id %}">{{ eachattack.defender.name }}</a>
+                            </li>
+                        </ul>
+                        <a class="btn btn-default" href="{% url 'hs:challenge_detail' eachattack.id %}" role="button">More
+                            Info</a>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>没有最近挑战记录。</p>
+        {% endif %}
+
+        {% if history_defend_list %}
+            {% for eachdefend in history_defend_list %}
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">HISTORY DEFEND: No.{{ forloop.counter }}</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <li>Result: <strong>{{ eachdefend.result }}</strong></li>
+                            <li>Expire Date: {{ eachdefend.expire_date }}</li>
+                            <li>Attack By: <a
+                                    href="{% url 'hs:contestant_detail' eachdefend.attacker_id %}">{{ eachdefend.attacker.name }}</a>
+                            </li>
+                        </ul>
+                        <a class="btn btn-default" href="{% url 'hs:challenge_detail' eachdefend.id %}" role="button">More
+                            Info</a>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>没有最近防御记录。</p>
+        {% endif %}
+    </div>
+{% endblock %}

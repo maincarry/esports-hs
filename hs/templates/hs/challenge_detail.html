@@ -1,0 +1,22 @@
+{% extends "hs/base-site.html" %}
+{% block title %}挑战详情 -HS SCIE eSports Club{% endblock %}
+
+{% block jumbotron %}
+    <h2>炉石传说挑战 (No.{{ challenge.id }}) 详细信息</h2>
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <ul>
+            <li>Result: <strong>{{ challenge.result }}</strong></li>
+            <li>Start Date: {{ challenge.start_date }}</li>
+            <li>Expire Date: {{ challenge.expire_date }}</li>
+            <li>Attacker: <a
+                    href="{% url 'hs:contestant_detail' challenge.attacker_id %}">{{ challenge.attacker.name }}</a>
+            </li>
+            <li>Defender: <a
+                    href="{% url 'hs:contestant_detail' challenge.defender_id %}">{{ challenge.defender.name }}</a>
+            </li>
+        </ul>
+        <a class="btn btn-primary" href="{% url 'hs:contestant_my_index' %}" role="button">我的挑战</a>
+    </div>
+{% endblock %}
