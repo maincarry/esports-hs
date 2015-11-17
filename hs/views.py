@@ -8,6 +8,7 @@ from hs.models import Contestant, Challenge
 from hs.forms import NewAttackForm, SetChallengeResultForm
 # Data_logging
 import logging
+
 logger = logging.getLogger(__name__)
 
 
@@ -60,8 +61,10 @@ def contestant_my_index(request):
     attack_list = Challenge.objects.filter(attacker=request.user.contestant, result='PEND')
     defend_list = Challenge.objects.filter(defender=request.user.contestant, result='PEND')
 
-    history_attack_list = Challenge.objects.filter(attacker=request.user.contestant).exclude(result='PEND').order_by('-expire_date')[0:3]
-    history_defend_list = Challenge.objects.filter(defender=request.user.contestant).exclude(result='PEND').order_by('-expire_date')[0:3]
+    history_attack_list = Challenge.objects.filter(attacker=request.user.contestant).exclude(result='PEND').order_by(
+        '-expire_date')[0:3]
+    history_defend_list = Challenge.objects.filter(defender=request.user.contestant).exclude(result='PEND').order_by(
+        '-expire_date')[0:3]
 
     context = {'attack_list': attack_list, 'defend_list': defend_list, 'history_attack_list': history_attack_list,
                'history_defend_list': history_defend_list}
@@ -83,7 +86,7 @@ def new_attack(request):
             attacker = form.cleaned_data['attacker']
             defender = form.cleaned_data['defender']
             new_challenge = Challenge(start_date=timezone.now(),
-                                      expire_date=timezone.now()+timedelta(days=1),
+                                      expire_date=timezone.now() + timedelta(days=1),
                                       attacker=attacker, defender=defender)
             new_challenge.save()
             return HttpResponseRedirect(reverse('hs:challenge_detail', args=(new_challenge.id,)))

@@ -10,3 +10,43 @@ INFO: set_results: Time: 2015-03-25 09:11:57.785635+00:00, Challenge_id: 14, set
 INFO: set_results: Time: 2015-03-25 09:11:57.792320+00:00, Challenge_id: 13, set_result = LOSE
 INFO: set_results: Time: 2015-03-25 09:11:57.798919+00:00, Challenge_id: 12, set_result = LOSE
 INFO: set_results: Time: 2015-03-25 09:11:57.805134+00:00, Challenge_id: 11, set_result = LOSE
+INFO: set_results: Time: 2015-03-28 09:49:21.048161+00:00, Challenge_id: 1, set_result = WIN
+INFO: set_results: Time: 2015-03-30 05:12:00.316484+00:00, Challenge_id: 2, set_result = WIN
+INFO: set_results: Time: 2015-03-30 05:12:20.523073+00:00, Challenge_id: 3, set_result = WIN
+INFO: set_results: Time: 2015-03-30 12:44:03.320779+00:00, Challenge_id: 4, set_result = WIN
+INFO: set_results: Time: 2015-03-30 12:52:52.501372+00:00, Challenge_id: 5, set_result = LOSE
+2015-03-31 11:31:58.405251+00:00 [SET RESULT]: Applicant:1 , Challenge:6, Set_Result:CANCEL
+2015-03-31 11:32:39.395204+00:00 [SET RESULT]: Applicant:1 , Challenge:6, Set_Result:CANCEL
+2015-03-31 11:33:23.481377+00:00 [SET RESULT]: Applicant:1 , Challenge:6, Set_Result:CANCEL
+INFO: set_results: Time: 2015-03-31 11:35:30.513480+00:00, Challenge_id: 6, set_result = CANCEL
+2015-03-31 11:35:30.513693+00:00 [SET RESULT]: Applicant:1 , Challenge:6, Set_Result:CANCEL
+INFO: set_results: Time: 2015-03-31 12:35:34.952300+00:00, Challenge_id: 7, set_result = WIN
+2015-03-31 12:35:34.952526+00:00 [SET RESULT]: Applicant:1 , Challenge:7, Set_Result:WIN
+INFO: set_results: Time: 2015-03-31 12:54:57.871194+00:00, Challenge_id: 8, set_result = WIN
+2015-03-31 12:54:57.871509+00:00 [SET RESULT]: Applicant:1 , Challenge:8, Set_Result:WIN
+INFO: set_results: Time: 2015-03-31 12:55:18.615907+00:00, Challenge_id: 9, set_result = LOSE
+2015-03-31 12:55:18.616104+00:00 [SET RESULT]: Applicant:1 , Challenge:9, Set_Result:LOSE
+INFO: set_results: Time: 2015-03-31 12:56:06.846427+00:00, Challenge_id: 10, set_result = LOSE
+2015-03-31 12:56:06.846618+00:00 [SET RESULT]: Applicant:1 , Challenge:10, Set_Result:LOSE
+INFO: set_results: Time: 2015-03-31 12:57:45.604477+00:00, Challenge_id: 11, set_result = CANCEL
+2015-03-31 12:57:45.604721+00:00 [SET RESULT]: Applicant:1 , Challenge:11, Set_Result:CANCEL
+INFO: set_results: Time: 2015-03-31 13:50:39.649644+00:00, Challenge_id: 12, set_result = CANCEL
+2015-03-31 13:50:39.649963+00:00 [SET RESULT]: Applicant:1 , Challenge:12, Set_Result:CANCEL
+INFO: set_results: Time: 2015-03-31 13:51:02.433524+00:00, Challenge_id: 13, set_result = WIN
+2015-03-31 13:51:02.433797+00:00 [SET RESULT]: Applicant:1 , Challenge:13, Set_Result:WIN
+INFO: set_results: Time: 2015-03-31 13:53:53.332420+00:00, Challenge_id: 14, set_result = LOSE
+2015-03-31 13:53:53.332664+00:00 [SET RESULT]: Applicant:1 , Challenge:14, Set_Result:LOSE
+INFO: set_results: Time: 2015-04-01 05:15:27.893671+00:00, Challenge_id: 15, set_result = LOSE
+2015-04-01 05:15:27.894147+00:00 [SET RESULT]: Applicant:1 , Challenge:15, Set_Result:LOSE
+INFO: set_results: Time: 2015-04-02 01:07:33.909839+00:00, Challenge_id: 16, set_result = WIN
+2015-04-02 01:07:33.910050+00:00 [SET RESULT]: Applicant:2 , Challenge:16, Set_Result:WIN
+INFO: set_results: Time: 2015-04-02 01:14:11.967513+00:00, Challenge_id: 17, set_result = CANCEL
+2015-04-02 01:14:11.967776+00:00 [SET RESULT]: Applicant:2 , Challenge:17, Set_Result:CANCEL
+INFO: set_results: Time: 2015-04-04 15:08:36.757111+00:00, Challenge_id: 18, set_result = WIN
+2015-04-04 15:08:36.757283+00:00 [SET RESULT]: Applicant:2 , Challenge:18, Set_Result:WIN
+INFO: set_results: Time: 2015-04-04 15:09:27.313278+00:00, Challenge_id: 19, set_result = WIN
+2015-04-04 15:09:27.313651+00:00 [SET RESULT]: Applicant:2 , Challenge:19, Set_Result:WIN
+INFO: set_results: Time: 2015-04-13 04:44:34.282710+00:00, Challenge_id: 20, set_result = WIN
+2015-04-13 04:44:34.282937+00:00 [SET RESULT]: Applicant:1 , Challenge:20, Set_Result:WIN
+INFO: set_results: Time: 2015-10-15 09:30:07.744563+00:00, Challenge_id: 21, set_result = WIN
+2015-10-15 09:30:07.745126+00:00 [SET RESULT]: Applicant:1 , Challenge:21, Set_Result:WIN

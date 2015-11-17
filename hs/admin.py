@@ -2,12 +2,14 @@ from django.contrib import admin
 from hs.models import Contestant, Challenge
 from django.contrib.admin import ModelAdmin
 
+
 def set_result_win(modeladmin, request, queryset):
     try:
         for each in queryset:
             each.set_results(Challenge.WIN)
     except:
         ModelAdmin.message_user(message="An Error occurred at set_result_win!")
+
 
 set_result_win.short_description = "Set to WIN and update scores"
 
@@ -18,6 +20,7 @@ def set_result_lose(modeladmin, request, queryset):
             each.set_results(Challenge.LOSE)
     except:
         ModelAdmin.message_user(message="An Error occurred at set_result_lose!")
+
 
 set_result_lose.short_description = "Set to LOSE and update scores"
 

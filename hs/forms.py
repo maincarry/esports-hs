@@ -28,4 +28,3 @@ class SetChallengeResultForm(forms.Form):
     applicant = forms.ModelChoiceField(queryset=applicant_set, widget=forms.HiddenInput, label='Who are you?')
     challenge = forms.ModelChoiceField(queryset=challenge_set, widget=forms.HiddenInput, label='Which Challenge?')
     result = forms.ChoiceField(result_choice, label='Does the challenge succeed?')
-

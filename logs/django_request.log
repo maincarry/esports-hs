@@ -617,3 +617,1072 @@ Not Found: /
 Not Found: /
 Not Found: /
 Not Found: /favicon.ico
+Internal Server Error: /hs/login
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 364, in urlconf_module
+    return self._urlconf_module
+AttributeError: 'RegexURLResolver' object has no attribute '_urlconf_module'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 87, in get_response
+    response = middleware_method(request)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/middleware/common.py", line 72, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 619, in is_valid_path
+    resolve(path, urlconf)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 494, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/mark/mywww/env/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 2231, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 2214, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 2203, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1129, in _exec
+  File "<frozen importlib._bootstrap>", line 1448, in exec_module
+  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
+  File "/home/mark/mywww/esports/esports/urls.py", line 6, in <module>
+    url(r'^hs/', include('hs.urls', namespace="hs")),
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/conf/urls/__init__.py", line 28, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/mark/mywww/env/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 2231, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 2214, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 2203, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1129, in _exec
+  File "<frozen importlib._bootstrap>", line 1448, in exec_module
+  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
+  File "/home/mark/mywww/esports/hs/urls.py", line 7, in <module>
+    url(r'^'), include('django.contrib.auth.urls'),
+TypeError: url() missing 1 required positional argument: 'view'
+Internal Server Error: /hs/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 364, in urlconf_module
+    return self._urlconf_module
+AttributeError: 'RegexURLResolver' object has no attribute '_urlconf_module'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/mark/mywww/env/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 2231, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 2214, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 2203, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1129, in _exec
+  File "<frozen importlib._bootstrap>", line 1448, in exec_module
+  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
+  File "/home/mark/mywww/esports/esports/urls.py", line 6, in <module>
+    url(r'^hs/', include('hs.urls', namespace="hs")),
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/conf/urls/__init__.py", line 28, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/mark/mywww/env/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 2231, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 2214, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 2203, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1129, in _exec
+  File "<frozen importlib._bootstrap>", line 1448, in exec_module
+  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
+  File "/home/mark/mywww/esports/hs/urls.py", line 7, in <module>
+    url(r'^'), include('django.contrib.auth.urls'),
+TypeError: url() missing 1 required positional argument: 'view'
+Internal Server Error: /hs/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 364, in urlconf_module
+    return self._urlconf_module
+AttributeError: 'RegexURLResolver' object has no attribute '_urlconf_module'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/mark/mywww/env/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 2231, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 2214, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 2203, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1129, in _exec
+  File "<frozen importlib._bootstrap>", line 1448, in exec_module
+  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
+  File "/home/mark/mywww/esports/esports/urls.py", line 6, in <module>
+    url(r'^hs/', include('hs.urls', namespace="hs")),
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/conf/urls/__init__.py", line 28, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/mark/mywww/env/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 2231, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 2214, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 2203, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1129, in _exec
+  File "<frozen importlib._bootstrap>", line 1448, in exec_module
+  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
+  File "/home/mark/mywww/esports/hs/urls.py", line 7, in <module>
+    url(r'^'), include('django.contrib.auth.urls'),
+TypeError: url() missing 1 required positional argument: 'view'
+Internal Server Error: /hs/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 364, in urlconf_module
+    return self._urlconf_module
+AttributeError: 'RegexURLResolver' object has no attribute '_urlconf_module'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 98, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 343, in resolve
+    for pattern in self.url_patterns:
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 372, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 366, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/mark/mywww/env/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 2231, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 2214, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 2203, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1129, in _exec
+  File "<frozen importlib._bootstrap>", line 1448, in exec_module
+  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
+  File "/home/mark/mywww/esports/esports/urls.py", line 6, in <module>
+    url(r'^hs/', include('hs.urls', namespace="hs")),
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/conf/urls/__init__.py", line 28, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/mark/mywww/env/lib/python3.4/importlib/__init__.py", line 109, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 2231, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 2214, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 2203, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1200, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1129, in _exec
+  File "<frozen importlib._bootstrap>", line 1448, in exec_module
+  File "<frozen importlib._bootstrap>", line 321, in _call_with_frames_removed
+  File "/home/mark/mywww/esports/hs/urls.py", line 7, in <module>
+    url(r'^auth/'), include('django.contrib.auth.urls'),
+TypeError: url() missing 1 required positional argument: 'view'
+Internal Server Error: /hs/login/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/response.py", line 103, in render
+    self.content = self.rendered_content
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/response.py", line 78, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/response.py", line 56, in resolve_template
+    return loader.get_template(template)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 136, in find_template
+    raise TemplateDoesNotExist(name)
+django.template.base.TemplateDoesNotExist: registration/login.html
+Not Found: /hs/6
+Internal Server Error: /hs/login/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 452, in render
+    current_app=context.current_app)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+django.core.urlresolvers.NoReverseMatch: Reverse for 'esports.django.contrib.auth.views.login' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/response.py", line 103, in render
+    self.content = self.rendered_content
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/response.py", line 80, in rendered_content
+    content = template.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 148, in render
+    return self._render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 458, in render
+    six.reraise(*exc_info)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/six.py", line 659, in reraise
+    raise value
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 444, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+django.core.urlresolvers.NoReverseMatch: Reverse for 'django.contrib.auth.views.login' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+Forbidden (CSRF token missing or incorrect.): /hs/login/
+Not Found: /hs/4
+Not Found: /hs/4
+Not Found: /hs/4
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /hs/my/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 20, in _wrapped_view
+    if test_func(request.user):
+  File "/home/mark/mywww/esports/hs/views.py", line 43, in is_hs_contestant_check
+    if user.contestant:
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/functional.py", line 225, in inner
+    return func(self._wrapped, *args)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/fields/related.py", line 428, in __get__
+    self.related.get_accessor_name()
+django.db.models.fields.related.RelatedObjectDoesNotExist: User has no contestant.
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /hs/my/index
+Not Found: /hs/my/index
+Not Found: /favicon.ico
+Internal Server Error: /hs/rank/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 537, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'esports.hs'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 452, in render
+    current_app=context.current_app)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 547, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'esports.hs' is not a registered namespace
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 23, in rank
+    return render(request, 'hs/rank.html', context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/shortcuts.py", line 50, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 148, in render
+    return self._render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 458, in render
+    six.reraise(*exc_info)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/six.py", line 659, in reraise
+    raise value
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 444, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+django.core.urlresolvers.NoReverseMatch: Reverse for 'new_attack_post' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+Not Found: /favicon.ico
+Internal Server Error: /hs/new_attack/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 96, in new_attack
+    c_attacker = get_object_or_404(Contestant, id=attacker_id)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/shortcuts.py", line 115, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/query.py", line 345, in get
+    clone = self.filter(*args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/query.py", line 691, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/query.py", line 709, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/sql/query.py", line 1331, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/sql/query.py", line 1358, in _add_q
+    current_negated=current_negated, connector=connector)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/sql/query.py", line 1230, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/sql/query.py", line 1138, in build_lookup
+    return final_lookup(lhs, rhs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/lookups.py", line 82, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_lookup(self.lookup_name, self.rhs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/fields/__init__.py", line 646, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/fields/__init__.py", line 915, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string or a number, not 'Contestant'
+Internal Server Error: /hs/challenge/2/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 33, in challenge_detail
+    return render(request, 'hs/challenge_detail.html', {'challenge': challenge})
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/shortcuts.py", line 50, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name, dirs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 144, in get_template
+    template, origin = find_template(template_name, dirs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 132, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 44, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 50, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 156, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 132, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 162, in compile_string
+    return parser.parse()
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 201, in do_extends
+    nodelist = parser.parse()
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 175, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 290, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 1345, in url
+    viewname = parser.compile_filter(bits[1])
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 372, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 588, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.base.TemplateSyntaxError: Could not parse the remainder: ':contestant_my_index' from 'hs:contestant_my_index'
+Internal Server Error: /hs/rank/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 537, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'esports.hs'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 452, in render
+    current_app=context.current_app)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 547, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'esports.hs' is not a registered namespace
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 23, in rank
+    return render(request, 'hs/rank.html', context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/shortcuts.py", line 50, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 148, in render
+    return self._render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 458, in render
+    six.reraise(*exc_info)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/six.py", line 659, in reraise
+    raise value
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 444, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+django.core.urlresolvers.NoReverseMatch: Reverse for 'new_attack_post' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+Not Found: /apple-touch-icon-120x120-precomposed.png
+Not Found: /apple-touch-icon-120x120.png
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon-precomposed.png
+Not Found: /favicon.ico
+Not Found: /hs/set_result
+Not Found: /hs/set_result/1
+Internal Server Error: /hs/my/set_result/1/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 115, in set_challenge_result
+    form.fields['attacker'].initial = request.user.contestant.id
+KeyError: 'attacker'
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /hs/new_attack/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/mysql/connector/django/base.py", line 115, in _execute_wrapper
+    return method(query, args)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/mysql/connector/cursor.py", line 507, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/mysql/connector/connection.py", line 722, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/mysql/connector/connection.py", line 640, in _handle_result
+    raise errors.get_exception(packet)
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'attacker_result' in 'field list'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 88, in new_attack
+    new_challenge.save()
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/base.py", line 589, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/base.py", line 617, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/base.py", line 698, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/base.py", line 731, in _do_insert
+    using=using, raw=raw)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/manager.py", line 92, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/query.py", line 921, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/sql/compiler.py", line 920, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/backends/utils.py", line 81, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/mysql/connector/django/base.py", line 135, in execute
+    return self._execute_wrapper(self.cursor.execute, query, args)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/mysql/connector/django/base.py", line 118, in _execute_wrapper
+    utils.ProgrammingError(err.msg), sys.exc_info()[2])
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/six.py", line 658, in reraise
+    raise value.with_traceback(tb)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/mysql/connector/django/base.py", line 115, in _execute_wrapper
+    return method(query, args)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/mysql/connector/cursor.py", line 507, in execute
+    self._handle_result(self._connection.cmd_query(stmt))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/mysql/connector/connection.py", line 722, in cmd_query
+    result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/mysql/connector/connection.py", line 640, in _handle_result
+    raise errors.get_exception(packet)
+django.db.utils.ProgrammingError: Unknown column 'attacker_result' in 'field list'
+Internal Server Error: /hs/my/set_result/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 537, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'esports.hs'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 452, in render
+    current_app=context.current_app)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 547, in reverse
+    key)
+django.core.urlresolvers.NoReverseMatch: 'esports.hs' is not a registered namespace
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 124, in set_challenge_result
+    return render(request, 'hs/set_challenge_result.html', {'form': form, 'challenge_id': c_challenge.id})
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/shortcuts.py", line 50, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 148, in render
+    return self._render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 458, in render
+    six.reraise(*exc_info)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/six.py", line 659, in reraise
+    raise value
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 444, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+django.core.urlresolvers.NoReverseMatch: Reverse for 'set_challenge_result' with arguments '(7,)' and keyword arguments '{}' not found. 1 pattern(s) tried: ['hs/my/set_result/$']
+Internal Server Error: /hs/my/set_result/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 130, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view hs.views.set_challenge_result didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /hs/my/set_result/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 130, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view hs.views.set_challenge_result didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /hs/my/set_result/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 317, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'challenge_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 105, in set_challenge_result
+    c_challenge = get_object_or_404(Challenge, id=request.POST['challenge_id'])
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'challenge_id'"
+Internal Server Error: /hs/my/set_result/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 130, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view hs.views.set_challenge_result didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /hs/my/set_result/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 317, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'in_challenge_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 105, in set_challenge_result
+    c_challenge = get_object_or_404(Challenge, id=request.POST['in_challenge_id'])
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'in_challenge_id'"
+Internal Server Error: /hs/my/set_result/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 317, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'in_challenge_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 105, in set_challenge_result
+    c_challenge = get_object_or_404(Challenge, id=request.POST['in_challenge_id'])
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'in_challenge_id'"
+Internal Server Error: /hs/my/set_result/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 317, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'challenge'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 105, in set_challenge_result
+    c_challenge = get_object_or_404(Challenge, id=request.POST.get('in_challenge_id', request.POST['challenge']))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'challenge'"
+Internal Server Error: /hs/my/set_result/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 317, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'in_challenge_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 105, in set_challenge_result
+    c_challenge = get_object_or_404(Challenge, id=request.GET['in_challenge_id'])
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'in_challenge_id'"
+Internal Server Error: /hs/my/set_result/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 317, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'in_challenge_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 105, in set_challenge_result
+    c_challenge = get_object_or_404(Challenge, id=request.GET['in_challenge_id'])
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'in_challenge_id'"
+Internal Server Error: /hs/my/set_result/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 317, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'in_challenge_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 105, in set_challenge_result
+    c_challenge = get_object_or_404(Challenge, id=request.GET['in_challenge_id'])
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'in_challenge_id'"
+Internal Server Error: /hs/my/set_result/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 124, in set_challenge_result
+    return render(request, 'hs/set_challenge_result.html', {'form': form, 'challenge_id': c_challenge.id})
+UnboundLocalError: local variable 'c_challenge' referenced before assignment
+Internal Server Error: /hs/my/set_result/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 317, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'in_challenge_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 103, in set_challenge_result
+    c_challenge = get_object_or_404(Challenge, id=request.GET['in_challenge_id'])
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'in_challenge_id'"
+Internal Server Error: /hs/my/set_result/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 111, in set_challenge_result
+    Challenge.set_results(challenge, result)
+  File "/home/mark/mywww/esports/hs/models.py", line 73, in set_results
+    self.result = in_result
+AttributeError: 'str' object has no attribute 'result'
+Internal Server Error: /hs/my/set_result/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 105, in set_challenge_result
+    challenge = Challenge.objects.get(request.POST['challenge'])
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/manager.py", line 92, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/query.py", line 345, in get
+    clone = self.filter(*args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/query.py", line 691, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/query.py", line 709, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/sql/query.py", line 1331, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/sql/query.py", line 1358, in _add_q
+    current_negated=current_negated, connector=connector)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/sql/query.py", line 1179, in build_filter
+    arg, value = filter_expr
+ValueError: need more than 1 value to unpack
+Internal Server Error: /hs/my/set_result/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 111, in set_challenge_result
+    Challenge.set_results(challenge, result)
+  File "/home/mark/mywww/esports/hs/models.py", line 73, in set_results
+    self.result = in_result
+AttributeError: 'str' object has no attribute 'result'
+Internal Server Error: /hs/my/set_result/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 317, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'in_challenge_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 118, in set_challenge_result
+    c_challenge = get_object_or_404(Challenge, id=request.GET['in_challenge_id'])
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'in_challenge_id'"
+Internal Server Error: /hs/my/set_result/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 130, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view hs.views.set_challenge_result didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /hs/my/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 66, in contestant_my_index
+    context = {'attack_list': attack_list, 'defend_list': defend_list, 'history_attack_list': history_attack_list,
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/shortcuts.py", line 50, in render
+    return HttpResponse(loader.render_to_string(*args, **kwargs),
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 178, in render_to_string
+    return t.render(context_instance)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 148, in render
+    return self._render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 126, in render
+    return compiled_parent._render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 142, in _render
+    return self.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/base.py", line 844, in render
+    bit = self.render_node(node, context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/debug.py", line 80, in render_node
+    return node.render(context)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 201, in render
+    nodelist.append(node.render(context))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 458, in render
+    six.reraise(*exc_info)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/defaulttags.py", line 444, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=context.current_app)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'set_challenge_result' with arguments '()' and keyword arguments '{}' not found. 1 pattern(s) tried: [u'hs/my/set_result/(?P<challenge_id>\\d+)/$']
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /hs/my/set_result/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 105, in set_challenge_result
+    if not form.is_bound():
+TypeError: 'bool' object is not callable
+Internal Server Error: /hs/my/set_result/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 317, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'challenge'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 111, in set_challenge_result
+    challenge = Challenge.objects.get(pk=request.POST['challenge'])
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'challenge'"
+Internal Server Error: /hs/my/set_result/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 317, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'challenge'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 111, in set_challenge_result
+    challenge = Challenge.objects.get(pk=request.POST['challenge'])
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'challenge'"
+Internal Server Error: /hs/my/set_result/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 317, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'in_challenge_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/esports/hs/views.py", line 105, in set_challenge_result
+    if request.POST['in_challenge_id']:
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 319, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'in_challenge_id'"
+Forbidden (CSRF token missing or incorrect.): /hs/login/
+Not Found: /admin/auth/group/3/
+Not Found: /apple-touch-icon-120x120-precomposed.png
+Not Found: /apple-touch-icon-120x120.png
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon-precomposed.png
+Not Found: /browserconfig.xml
+Forbidden (CSRF token missing or incorrect.): /admin/login/
+Not Found: /favicon.ico
+Internal Server Error: /hs/change_password/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/views/decorators/debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/decorators.py", line 105, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/views.py", line 261, in password_change
+    post_change_redirect = reverse('password_change_done')
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+django.core.urlresolvers.NoReverseMatch: Reverse for 'password_change_done' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+Internal Server Error: /hs/change_password/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/views/decorators/debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/decorators.py", line 105, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/views.py", line 261, in password_change
+    post_change_redirect = reverse('password_change_done')
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+django.core.urlresolvers.NoReverseMatch: Reverse for 'password_change_done' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+Internal Server Error: /hs/change_password/
+Traceback (most recent call last):
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/views/decorators/debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/decorators.py", line 105, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/views.py", line 261, in password_change
+    post_change_redirect = reverse('password_change_done')
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 551, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+django.core.urlresolvers.NoReverseMatch: Reverse for 'password_change_done' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+Not Found: /hs/change_password
+Not Found: /hs/admin
+Not Found: /favicon.ico
+Not Found: /addons/ewei_shop/site.php
+Not Found: /member.php
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico

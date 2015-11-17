@@ -7,7 +7,6 @@ import datetime
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ('hs', '0002_auto_20150312_2015'),
     ]
@@ -16,13 +15,15 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='challenge',
             name='expire_date',
-            field=models.DateTimeField(default=datetime.datetime(2015, 3, 13, 14, 16, 41, 174196, tzinfo=utc), verbose_name='deadline'),
+            field=models.DateTimeField(default=datetime.datetime(2015, 3, 13, 14, 16, 41, 174196, tzinfo=utc),
+                                       verbose_name='deadline'),
             preserve_default=True,
         ),
         migrations.AlterField(
             model_name='challenge',
             name='start_date',
-            field=models.DateTimeField(default=datetime.datetime(2015, 3, 12, 14, 16, 41, 174138, tzinfo=utc), verbose_name='date started'),
+            field=models.DateTimeField(default=datetime.datetime(2015, 3, 12, 14, 16, 41, 174138, tzinfo=utc),
+                                       verbose_name='date started'),
             preserve_default=True,
         ),
         migrations.AlterField(

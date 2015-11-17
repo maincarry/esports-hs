@@ -15,7 +15,6 @@ urlpatterns = patterns('',
                        # /hs/new_attack/
                        url(r'^new_attack/$', views.new_attack, name='new_attack'),
 
-
                        # /hs/login etc
                        # url(r'^', include('django.contrib.auth.urls')),
                        # /hs/login
@@ -31,7 +30,6 @@ urlpatterns = patterns('',
                        # /hs/change_password/done
                        url(r'^change_password/done/$', 'django.contrib.auth.views.password_change_done',
                            {'template_name': 'hs/auth/change_password_done.html'}, name='password_change_done'),
-
 
                        # /hs/403/
                        url(r'^403/', views.error_not_hs_member, name='error_not_hs_member'),
