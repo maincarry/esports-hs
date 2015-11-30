@@ -44,8 +44,8 @@
             <ul class="nav navbar-nav">
                 {% if user.is_authenticated %}
                     <li class="navbar-text">Hello, {{ user.username }}</li>
+{#                    <li><a href="{% url 'hs:rank' %}">Rules</a></li>#}
                     <li><a href="{% url 'hs:contestant_my_index' %}">我的挑战</a></li>
-                    <li><a href="{% url 'hs:rank' %}">实时排名</a></li>
                     <li><a href="{% url 'hs:new_attack' %}">发起挑战</a></li>
                 {% else %}
                     <li class="navbar-text">Welcome. Please log in.</li>

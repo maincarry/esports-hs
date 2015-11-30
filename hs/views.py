@@ -13,10 +13,14 @@ logger = logging.getLogger(__name__)
 
 
 def is_hs_contestant_check(user):
-    if hasattr(user, 'contestant') or user.is_staff:
+    if hasattr(user, 'contestant'):
         return True
     else:
         return False
+
+def is_hs_staff_check(user):
+    # TODO: finish the staff check
+    return False
 
 
 def error_not_hs_member(request):
@@ -30,8 +34,14 @@ def redirect_to_hs(request):
 def index(request):
     return render(request, 'hs/index.html')
 
-
+@user_passes_test(is_hs_staff_check, 'hs:error_not_hs_member')
 def rank(request):
+    '''
+    /hs/rank.html
+    access control needed!!!
+    :param request:
+    :return:
+    '''
     latest_contestant_list = Contestant.objects.filter(is_active=True).order_by('-score')
     context = {'latest_contestant_list': latest_contestant_list}
     return render(request, 'hs/rank.html', context)
