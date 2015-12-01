@@ -112,9 +112,9 @@ class Challenge(models.Model):
                         elif not SvW:
                             ref = 18.062 * exp(-0.05 * diff)
 
-                        # attacker - ref*0.8 ; defender + ref*0.8
+                        # attacker - ref*0.8 ; defender + ref
                         final_score_change[0] = -1 * round(ref * 0.8, 2)
-                        final_score_change[1] = round(ref * 0.8, 2)
+                        final_score_change[1] = round(ref, 2)
 
                         self.attacker.score += final_score_change[0]
                         self.defender.score += final_score_change[1]
