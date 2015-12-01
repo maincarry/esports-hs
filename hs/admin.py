@@ -1,6 +1,10 @@
 from django.contrib import admin
 from hs.models import Contestant, Challenge
 from django.contrib.admin import ModelAdmin
+from django.contrib import admin
+from django.contrib.auth.admin import UserAdmin
+from django.contrib.auth.models import User
+
 
 def set_result_win(modeladmin, request, queryset):
     try:
@@ -8,6 +12,7 @@ def set_result_win(modeladmin, request, queryset):
             each.set_results(Challenge.WIN)
     except:
         ModelAdmin.message_user(message="An Error occurred at set_result_win!")
+
 
 set_result_win.short_description = "Set to WIN and update scores"
 
@@ -18,6 +23,7 @@ def set_result_lose(modeladmin, request, queryset):
             each.set_results(Challenge.LOSE)
     except:
         ModelAdmin.message_user(message="An Error occurred at set_result_lose!")
+
 
 set_result_lose.short_description = "Set to LOSE and update scores"
 
@@ -41,6 +47,20 @@ class ContestantAdmin(admin.ModelAdmin):
     ]
     list_display = ('name', 'score')
 
-
 admin.site.register(Contestant, ContestantAdmin)
 admin.site.register(Challenge, ChallengeAdmin)
+
+# class ContestantInline(admin.StackedInline):
+#     model = Contestant
+#     can_delete = False
+#     verbose_name_plural = 'contestant'
+#
+# # Define a new User admin
+# class UserAdmin(UserAdmin):
+#     inlines = (ContestantInline, )
+#
+# # Re-register UserAdmin
+# admin.site.unregister(User)
+# admin.site.register(User, UserAdmin)
+
+

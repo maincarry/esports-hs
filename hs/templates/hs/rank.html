@@ -35,18 +35,13 @@
         <div class="row">
             <h2>你好，{{ user.username }}。</h2>
 
-            <h3>你可以：</h3>
-            <ul>
-                <li>查看你当前的所有挑战 (<a href="{% url 'hs:contestant_my_index' %}">我的挑战</a>)</li>
-                <li>发起一个新的挑战 (<a href="{% url 'hs:new_attack' %}">发起挑战</a>)</li>
-            </ul>
+            <h3>排名为不公开信息，请不要泄露本页面的任何信息，谢谢</h3>
         </div>
-
     {% else %}
         <div class="row">
-            <h2>你好，登录之后才可以发起挑战。</h2>
+            <h2>你好，本赛季中排名为不公开信息。</h2>
 
-            <h3>请点击右上角Login登录。</h3>
+            <h2>工作人员请点击右上角Login登录。</h2>
         </div>
     {% endif %}
 

@@ -8,14 +8,19 @@ from hs.models import Contestant, Challenge
 from hs.forms import NewAttackForm, SetChallengeResultForm
 # Data_logging
 import logging
+
 logger = logging.getLogger(__name__)
 
 
 def is_hs_contestant_check(user):
-    if hasattr(user, 'contestant') or user.is_staff:
+    if hasattr(user, 'contestant'):
         return True
     else:
         return False
+
+def is_hs_staff_check(user):
+    # TODO: finish the staff check
+    return False
 
 
 def error_not_hs_member(request):
@@ -29,8 +34,14 @@ def redirect_to_hs(request):
 def index(request):
     return render(request, 'hs/index.html')
 
-
+@user_passes_test(is_hs_staff_check, 'hs:error_not_hs_member')
 def rank(request):
+    '''
+    /hs/rank.html
+    access control needed!!!
+    :param request:
+    :return:
+    '''
     latest_contestant_list = Contestant.objects.filter(is_active=True).order_by('-score')
     context = {'latest_contestant_list': latest_contestant_list}
     return render(request, 'hs/rank.html', context)
@@ -60,8 +71,10 @@ def contestant_my_index(request):
     attack_list = Challenge.objects.filter(attacker=request.user.contestant, result='PEND')
     defend_list = Challenge.objects.filter(defender=request.user.contestant, result='PEND')
 
-    history_attack_list = Challenge.objects.filter(attacker=request.user.contestant).exclude(result='PEND').order_by('-expire_date')[0:3]
-    history_defend_list = Challenge.objects.filter(defender=request.user.contestant).exclude(result='PEND').order_by('-expire_date')[0:3]
+    history_attack_list = Challenge.objects.filter(attacker=request.user.contestant).exclude(result='PEND').order_by(
+        '-expire_date')[0:3]
+    history_defend_list = Challenge.objects.filter(defender=request.user.contestant).exclude(result='PEND').order_by(
+        '-expire_date')[0:3]
 
     context = {'attack_list': attack_list, 'defend_list': defend_list, 'history_attack_list': history_attack_list,
                'history_defend_list': history_defend_list}
@@ -83,7 +96,7 @@ def new_attack(request):
             attacker = form.cleaned_data['attacker']
             defender = form.cleaned_data['defender']
             new_challenge = Challenge(start_date=timezone.now(),
-                                      expire_date=timezone.now()+timedelta(days=1),
+                                      expire_date=timezone.now() + timedelta(days=1),
                                       attacker=attacker, defender=defender)
             new_challenge.save()
             return HttpResponseRedirect(reverse('hs:challenge_detail', args=(new_challenge.id,)))

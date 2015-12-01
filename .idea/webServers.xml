@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="941fcc0c-b1fc-44d8-8e35-33483d881cf5" name="MarX" url="http://106.187.95.211">
+        <fileTransfer host="106.187.95.211" port="367" privateKey="D:\my_keys\Linode\U_private_mark@MarX.ppk" rootFolder="/home/mark" accessType="SFTP" username="mark" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

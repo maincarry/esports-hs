@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Mark@MarX" promptOnLocalOverwrite="false">
+  <component name="PublishConfigData" serverName="MarX" promptOnLocalOverwrite="false">
     <serverData>
-      <paths name="Mark@MarX">
+      <paths name="MarX">
         <serverdata>
           <mappings>
             <mapping deploy="/mywww/esports" local="$PROJECT_DIR$" web="/" />
           </mappings>
-          <excludedPaths>
-            <excludedPath path="/mywww/esports/__pycache__" />
-            <excludedPath path="/mywww/esports/hs/__pycache__" />
-          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>
