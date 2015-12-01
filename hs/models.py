@@ -2,6 +2,7 @@ from django.conf import settings
 from django.db import models
 from django.core.exceptions import ValidationError
 from django.utils import timezone
+from django.contrib.auth.models import User
 from math import exp
 
 import sys
@@ -12,7 +13,7 @@ logger = logging.getLogger(__name__)
 
 
 class Contestant(models.Model):
-    user = models.OneToOneField(settings.AUTH_USER_MODEL, null=True)
+    user = models.OneToOneField(User, null=True)
     name = models.CharField(max_length=30)
     score = models.FloatField(default=50.0)
     phone = models.CharField(max_length=15, blank=True)

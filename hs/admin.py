@@ -1,6 +1,9 @@
 from django.contrib import admin
 from hs.models import Contestant, Challenge
 from django.contrib.admin import ModelAdmin
+from django.contrib import admin
+from django.contrib.auth.admin import UserAdmin
+from django.contrib.auth.models import User
 
 
 def set_result_win(modeladmin, request, queryset):
@@ -44,6 +47,20 @@ class ContestantAdmin(admin.ModelAdmin):
     ]
     list_display = ('name', 'score')
 
-
 admin.site.register(Contestant, ContestantAdmin)
 admin.site.register(Challenge, ChallengeAdmin)
+
+# class ContestantInline(admin.StackedInline):
+#     model = Contestant
+#     can_delete = False
+#     verbose_name_plural = 'contestant'
+#
+# # Define a new User admin
+# class UserAdmin(UserAdmin):
+#     inlines = (ContestantInline, )
+#
+# # Re-register UserAdmin
+# admin.site.unregister(User)
+# admin.site.register(User, UserAdmin)
+
+

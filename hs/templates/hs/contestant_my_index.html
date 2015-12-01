@@ -51,8 +51,7 @@
                     <div class="panel-body">
                         <ul>
                             <li>Expire Date: {{ eachattack.expire_date }}</li>
-                            <li>Attack To: <a
-                                    href="{% url 'hs:contestant_detail' eachattack.defender_id %}">{{ eachattack.defender.name }}</a>
+                            <li>Attack To: <a href="{% url 'hs:contestant_detail' eachattack.defender_id %}">{{ eachattack.defender.name }}</a>
                             </li>
                         </ul>
                         <a class="btn btn-default" href="{% url 'hs:challenge_detail' eachattack.id %}" role="button">More
@@ -85,12 +84,9 @@
                         <ul>
                             <li>Result: <strong>{{ eachattack.result }}</strong></li>
                             <li>Expire Date: {{ eachattack.expire_date }}</li>
-                            <li>Attack To: <a
-                                    href="{% url 'hs:contestant_detail' eachattack.defender_id %}">{{ eachattack.defender.name }}</a>
-                            </li>
+                            <li>Challenged to: <a href="{% url 'hs:contestant_detail' eachattack.defender_id %}">{{ eachattack.defender.name }}</a></li>
                         </ul>
-                        <a class="btn btn-default" href="{% url 'hs:challenge_detail' eachattack.id %}" role="button">More
-                            Info</a>
+                        <a class="btn btn-default" href="{% url 'hs:challenge_detail' eachattack.id %}" role="button">MoreInfo</a>
                     </div>
                 </div>
             {% endfor %}
@@ -108,12 +104,9 @@
                         <ul>
                             <li>Result: <strong>{{ eachdefend.result }}</strong></li>
                             <li>Expire Date: {{ eachdefend.expire_date }}</li>
-                            <li>Attack By: <a
-                                    href="{% url 'hs:contestant_detail' eachdefend.attacker_id %}">{{ eachdefend.attacker.name }}</a>
-                            </li>
+                            <li>Challenged By: <a href="{% url 'hs:contestant_detail' eachdefend.attacker_id %}">{{ eachdefend.attacker.name }}</a></li>
                         </ul>
-                        <a class="btn btn-default" href="{% url 'hs:challenge_detail' eachdefend.id %}" role="button">More
-                            Info</a>
+                        <a class="btn btn-default" href="{% url 'hs:challenge_detail' eachdefend.id %}" role="button">MoreInfo</a>
                     </div>
                 </div>
             {% endfor %}
