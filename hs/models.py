@@ -97,7 +97,7 @@ class Challenge(models.Model):
 
                         # attacker + ref ; defender - ref*0.8
                         final_score_change[0] = round(ref, 2)
-                        final_score_change[1] = round(ref * 0.8 * -1, 2)
+                        final_score_change[1] = -1 * round(ref * 0.8, 2)
 
                         self.attacker.score += final_score_change[0]
                         self.defender.score += final_score_change[1]
@@ -112,15 +112,15 @@ class Challenge(models.Model):
                         elif not SvW:
                             ref = 18.062 * exp(-0.05 * diff)
 
-                        # attacker - ref*0.5*0.8 ; defender + ref*1*0.5
-                        final_score_change[0] = round(ref * -1 * 0.4, 2)
-                        final_score_change[0] = round(ref * 0.5, 2)
+                        # attacker - ref*0.8 ; defender + ref*0.8
+                        final_score_change[0] = -1 * round(ref * 0.8, 2)
+                        final_score_change[1] = round(ref * 0.8, 2)
 
                         self.attacker.score += final_score_change[0]
                         self.defender.score += final_score_change[1]
 
                 except:
-                    log_data = ("Error occurred at set_scores" + str(sys.exc_info()) + '\n')
+                    log_data = ("-------ERROR-------\n" + "Error occurred at set_scores" + str(sys.exc_info()) + '\n')
                     logger.info('ERROR: set_results: ' + log_data)
 
                 else:
@@ -132,7 +132,7 @@ class Challenge(models.Model):
                     # record the use of this function by logging
                     log_data = ('Time: %s, Challenge_id: %s, set_result: %s, score_change: %s\n' %
                                 (str(timezone.now()), str(self.id), str(in_result), str(final_score_change)))
-                    logger.info('INFO: set_results: ' + log_data)
+                    logger.info("-------INFO-------\n"+'INFO: set_results: ' + log_data)
 
         else:
             self.result = in_result
