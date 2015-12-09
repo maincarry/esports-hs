@@ -79,9 +79,17 @@ def contestant_my_index(request):
     current_contestant = request.user.contestant
     contestant_score = current_contestant.score
     contestant_list = Contestant.objects.all()
-    ahead_contestant_score = contestant_list.filter(score__gte=contestant_score).order_by('score').first().score
-    follow_contestant_score = contestant_list.filter(score__lte=contestant_score).order_by('-score').first().score
 
+    # for the ahead contestant's score
+    ahead_contestant_score = contestant_score
+    if current_contestant.position != 1:
+        ahead_contestant_score = contestant_list.filter(score__gt=contestant_score).order_by('score').first().score
+
+    # for the follow contestant's score
+    try:
+        follow_contestant_score = contestant_list.filter(score__lt=contestant_score).order_by('-score').first().score
+    except AttributeError:
+        follow_contestant_score = contestant_score
 
 
     context = {'attack_list': attack_list, 'defend_list': defend_list, 'history_attack_list': history_attack_list,
