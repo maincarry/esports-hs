@@ -38,7 +38,8 @@ def index(request):
 def rank(request):
     '''
     /hs/rank.html
-    access control needed!!!
+    !!!Access control needed!!!
+    Only staff can view this page!
     :param request:
     :return:
     '''
@@ -78,7 +79,7 @@ def contestant_my_index(request):
 
     current_contestant = request.user.contestant
     contestant_score = current_contestant.score
-    contestant_list = Contestant.objects.all()
+    contestant_list = Contestant.objects.filter(is_active=True)
 
     # for the ahead contestant's score
     ahead_contestant_score = contestant_score
