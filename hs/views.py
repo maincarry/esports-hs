@@ -80,7 +80,7 @@ def contestant_my_index(request):
     contestant_score = current_contestant.score
     contestant_list = Contestant.objects.all()
     ahead_contestant_score = contestant_list.filter(score__gte=contestant_score).order_by('score').first().score
-    follow_contestant_score = contestant_list.filter(score__ste=contestant_score).order_by('-score').first().score
+    follow_contestant_score = contestant_list.filter(score__lte=contestant_score).order_by('-score').first().score
 
 
 
