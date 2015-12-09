@@ -4,7 +4,11 @@
 
 {% block jumbotron %}
     <h2>{{ user.contestant.name }}，欢迎回来。</h2>
-    <h3>你现在的排名是第 {{ user.contestant.position }} 名，分数为 {{ user.contestant.score }} ，继续加油！</h3>
+    <h3>你现在的分数为 {{ user.contestant.score }} ，继续加油！</h3>
+    <ul>
+    <li>位于你前一名选手的分数是: {{ ahead_contestant_score }}</li>
+    <li>位于你后一名选手的分数是: {{ follow_contestant_score }}</li>
+    </ul>
     <br/>
     {% if defend_list.count != 0 %}
         <div class="alert alert-warning" role="alert">

@@ -76,8 +76,16 @@ def contestant_my_index(request):
     history_defend_list = Challenge.objects.filter(defender=request.user.contestant).exclude(result='PEND').order_by(
         '-expire_date')[0:3]
 
+    current_contestant = request.user.contestant
+    contestant_score = current_contestant.score
+    contestant_list = Contestant.objects.all()
+    ahead_contestant_score = contestant_list.filter(score__gte=contestant_score).order_by('score').first().score
+    follow_contestant_score = contestant_list.filter(score__ste=contestant_score).order_by('-score').first().score
+
+
+
     context = {'attack_list': attack_list, 'defend_list': defend_list, 'history_attack_list': history_attack_list,
-               'history_defend_list': history_defend_list}
+               'history_defend_list': history_defend_list, 'ahead_contestant_score': ahead_contestant_score, 'follow_contestant_score': follow_contestant_score}
     return render(request, 'hs/contestant_my_index.html', context)
 
 
