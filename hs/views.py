@@ -4,7 +4,7 @@ from django.core.urlresolvers import reverse
 from django.utils import timezone
 from datetime import timedelta
 from django.contrib.auth.decorators import login_required, user_passes_test
-from hs.models import Contestant, Challenge
+from .models import Contestant, Challenge
 from hs.forms import NewAttackForm, SetChallengeResultForm
 # Data_logging
 import logging
