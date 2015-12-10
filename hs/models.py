@@ -31,8 +31,8 @@ class Contestant(models.Model):
 class Challenge(models.Model):
     start_date = models.DateTimeField('date started')
     expire_date = models.DateTimeField('deadline')
-    attacker = models.ForeignKey(Contestant, related_name='attacks')
-    defender = models.ForeignKey(Contestant, related_name='defends')
+    attacker = models.ForeignKey(Contestant, related_name='attacks', on_delete=models.CASCADE)
+    defender = models.ForeignKey(Contestant, related_name='defends', on_delete=models.CASCADE)
 
     WIN = 'WIN'
     LOSE = 'LOSE'
