@@ -38,8 +38,8 @@ urlpatterns = patterns('',
                        # /hs/my/
                        url(r'^my/$', views.contestant_my_index, name='contestant_my_index'),
                        # /hs/my/set_result
-                       url(r'^my/set_result/$', views.set_challenge_result,
-                           name='set_challenge_result'),
+                       url(r'^my/set_result/$', views.attacker_set_challenge_result,
+                           name='attacker_set_challenge_result'),
 
                        # url(),
                        )

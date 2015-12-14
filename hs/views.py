@@ -5,8 +5,7 @@ from django.utils import timezone
 from datetime import timedelta
 from django.contrib.auth.decorators import login_required, user_passes_test
 from .models import Contestant, Challenge
-from hs.forms import NewAttackForm, SetChallengeResultForm
-# Data_logging
+from hs.forms import NewAttackForm, SetChallengeResultByAttackerForm
 import logging
 
 logger = logging.getLogger(__name__)
@@ -113,11 +112,12 @@ def new_attack(request):
             attacker = form.cleaned_data['attacker']
             defender = form.cleaned_data['defender']
             new_challenge = Challenge(start_date=timezone.now(),
-                                      expire_date=timezone.now() + timedelta(days=1),
+                                      expire_date=timezone.now() + timedelta(days=3),
                                       attacker=attacker, defender=defender)
             new_challenge.save()
             return HttpResponseRedirect(reverse('hs:challenge_detail', args=(new_challenge.id,)))
     else:
+
         form = NewAttackForm()
         form.fields['attacker'].initial = request.user.contestant.id
 
@@ -126,12 +126,14 @@ def new_attack(request):
 
 @login_required
 @user_passes_test(is_hs_contestant_check, 'hs:error_not_hs_member')
-def set_challenge_result(request):
+def attacker_set_challenge_result(request):
     if request.user.is_staff:
         # temporary: not finished admin page
         return HttpResponseRedirect(reverse('hs:error_not_hs_member'))
+
+
     if request.method == 'POST':
-        form = SetChallengeResultForm(request.POST)
+        form = SetChallengeResultByAttackerForm(request.POST)
         # if request.POST['in_challenge_id'] exists, go to ELSE part to render a new form
         # if that is not exist, it means that the forms is filled and process data instead.
         # Alternative method: if 'in_challenge_id' not in request.POST: statement
@@ -150,11 +152,11 @@ def set_challenge_result(request):
                                                  (str(request.user.contestant.id), str(challenge.id), str(result))
                 logger.info(log_data)
                 return HttpResponseRedirect(reverse('hs:challenge_detail', args=(challenge.id,)))
-            return render(request, 'hs/set_challenge_result.html', {'form': form})
+            return render(request, 'hs/attacker_set_challenge_result.html', {'form': form})
         else:
-            form = SetChallengeResultForm()
+            form = SetChallengeResultByAttackerForm()
             form.fields['challenge'].initial = request.POST['in_challenge_id']
             form.fields['applicant'].initial = request.user.contestant.id
-            return render(request, 'hs/set_challenge_result.html', {'form': form})
+            return render(request, 'hs/attacker_set_challenge_result.html', {'form': form})
     else:
         return render(request, 'hs/auth/error_not_hs_member.html')

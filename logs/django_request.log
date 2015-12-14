@@ -1104,7 +1104,7 @@ Traceback (most recent call last):
     return view_func(request, *args, **kwargs)
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
     return view_func(request, *args, **kwargs)
-  File "/home/mark/mywww/esports/hs/views.py", line 115, in set_challenge_result
+  File "/home/mark/mywww/esports/hs/views.py", line 115, in attacker_set_challenge_result
     form.fields['attacker'].initial = request.user.contestant.id
 KeyError: 'attacker'
 Not Found: /favicon.ico
@@ -1190,8 +1190,8 @@ Traceback (most recent call last):
     return view_func(request, *args, **kwargs)
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
     return view_func(request, *args, **kwargs)
-  File "/home/mark/mywww/esports/hs/views.py", line 124, in set_challenge_result
-    return render(request, 'hs/set_challenge_result.html', {'form': form, 'challenge_id': c_challenge.id})
+  File "/home/mark/mywww/esports/hs/views.py", line 124, in attacker_set_challenge_result
+    return render(request, 'hs/attacker_set_challenge_result.html', {'form': form, 'challenge_id': c_challenge.id})
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/shortcuts.py", line 50, in render
     return HttpResponse(loader.render_to_string(*args, **kwargs),
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/template/loader.py", line 178, in render_to_string
@@ -1228,17 +1228,17 @@ Traceback (most recent call last):
     return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
     (lookup_view_s, args, kwargs, len(patterns), patterns))
-django.core.urlresolvers.NoReverseMatch: Reverse for 'set_challenge_result' with arguments '(7,)' and keyword arguments '{}' not found. 1 pattern(s) tried: ['hs/my/set_result/$']
+django.core.urlresolvers.NoReverseMatch: Reverse for 'attacker_set_challenge_result' with arguments '(7,)' and keyword arguments '{}' not found. 1 pattern(s) tried: ['hs/my/set_result/$']
 Internal Server Error: /hs/my/set_result/
 Traceback (most recent call last):
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 130, in get_response
     % (callback.__module__, view_name))
-ValueError: The view hs.views.set_challenge_result didn't return an HttpResponse object. It returned None instead.
+ValueError: The view hs.views.attacker_set_challenge_result didn't return an HttpResponse object. It returned None instead.
 Internal Server Error: /hs/my/set_result/
 Traceback (most recent call last):
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 130, in get_response
     % (callback.__module__, view_name))
-ValueError: The view hs.views.set_challenge_result didn't return an HttpResponse object. It returned None instead.
+ValueError: The view hs.views.attacker_set_challenge_result didn't return an HttpResponse object. It returned None instead.
 Internal Server Error: /hs/my/set_result/
 Traceback (most recent call last):
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 317, in __getitem__
@@ -1254,7 +1254,7 @@ Traceback (most recent call last):
     return view_func(request, *args, **kwargs)
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
     return view_func(request, *args, **kwargs)
-  File "/home/mark/mywww/esports/hs/views.py", line 105, in set_challenge_result
+  File "/home/mark/mywww/esports/hs/views.py", line 105, in attacker_set_challenge_result
     c_challenge = get_object_or_404(Challenge, id=request.POST['challenge_id'])
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 319, in __getitem__
     raise MultiValueDictKeyError(repr(key))
@@ -1263,7 +1263,7 @@ Internal Server Error: /hs/my/set_result/
 Traceback (most recent call last):
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 130, in get_response
     % (callback.__module__, view_name))
-ValueError: The view hs.views.set_challenge_result didn't return an HttpResponse object. It returned None instead.
+ValueError: The view hs.views.attacker_set_challenge_result didn't return an HttpResponse object. It returned None instead.
 Internal Server Error: /hs/my/set_result/
 Traceback (most recent call last):
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 317, in __getitem__
@@ -1279,7 +1279,7 @@ Traceback (most recent call last):
     return view_func(request, *args, **kwargs)
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
     return view_func(request, *args, **kwargs)
-  File "/home/mark/mywww/esports/hs/views.py", line 105, in set_challenge_result
+  File "/home/mark/mywww/esports/hs/views.py", line 105, in attacker_set_challenge_result
     c_challenge = get_object_or_404(Challenge, id=request.POST['in_challenge_id'])
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 319, in __getitem__
     raise MultiValueDictKeyError(repr(key))
@@ -1299,7 +1299,7 @@ Traceback (most recent call last):
     return view_func(request, *args, **kwargs)
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
     return view_func(request, *args, **kwargs)
-  File "/home/mark/mywww/esports/hs/views.py", line 105, in set_challenge_result
+  File "/home/mark/mywww/esports/hs/views.py", line 105, in attacker_set_challenge_result
     c_challenge = get_object_or_404(Challenge, id=request.POST['in_challenge_id'])
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 319, in __getitem__
     raise MultiValueDictKeyError(repr(key))
@@ -1319,7 +1319,7 @@ Traceback (most recent call last):
     return view_func(request, *args, **kwargs)
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
     return view_func(request, *args, **kwargs)
-  File "/home/mark/mywww/esports/hs/views.py", line 105, in set_challenge_result
+  File "/home/mark/mywww/esports/hs/views.py", line 105, in attacker_set_challenge_result
     c_challenge = get_object_or_404(Challenge, id=request.POST.get('in_challenge_id', request.POST['challenge']))
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 319, in __getitem__
     raise MultiValueDictKeyError(repr(key))
@@ -1339,7 +1339,7 @@ Traceback (most recent call last):
     return view_func(request, *args, **kwargs)
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
     return view_func(request, *args, **kwargs)
-  File "/home/mark/mywww/esports/hs/views.py", line 105, in set_challenge_result
+  File "/home/mark/mywww/esports/hs/views.py", line 105, in attacker_set_challenge_result
     c_challenge = get_object_or_404(Challenge, id=request.GET['in_challenge_id'])
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 319, in __getitem__
     raise MultiValueDictKeyError(repr(key))
@@ -1359,7 +1359,7 @@ Traceback (most recent call last):
     return view_func(request, *args, **kwargs)
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
     return view_func(request, *args, **kwargs)
-  File "/home/mark/mywww/esports/hs/views.py", line 105, in set_challenge_result
+  File "/home/mark/mywww/esports/hs/views.py", line 105, in attacker_set_challenge_result
     c_challenge = get_object_or_404(Challenge, id=request.GET['in_challenge_id'])
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 319, in __getitem__
     raise MultiValueDictKeyError(repr(key))
@@ -1379,7 +1379,7 @@ Traceback (most recent call last):
     return view_func(request, *args, **kwargs)
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
     return view_func(request, *args, **kwargs)
-  File "/home/mark/mywww/esports/hs/views.py", line 105, in set_challenge_result
+  File "/home/mark/mywww/esports/hs/views.py", line 105, in attacker_set_challenge_result
     c_challenge = get_object_or_404(Challenge, id=request.GET['in_challenge_id'])
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 319, in __getitem__
     raise MultiValueDictKeyError(repr(key))
@@ -1392,8 +1392,8 @@ Traceback (most recent call last):
     return view_func(request, *args, **kwargs)
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
     return view_func(request, *args, **kwargs)
-  File "/home/mark/mywww/esports/hs/views.py", line 124, in set_challenge_result
-    return render(request, 'hs/set_challenge_result.html', {'form': form, 'challenge_id': c_challenge.id})
+  File "/home/mark/mywww/esports/hs/views.py", line 124, in attacker_set_challenge_result
+    return render(request, 'hs/attacker_set_challenge_result.html', {'form': form, 'challenge_id': c_challenge.id})
 UnboundLocalError: local variable 'c_challenge' referenced before assignment
 Internal Server Error: /hs/my/set_result/
 Traceback (most recent call last):
@@ -1410,7 +1410,7 @@ Traceback (most recent call last):
     return view_func(request, *args, **kwargs)
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
     return view_func(request, *args, **kwargs)
-  File "/home/mark/mywww/esports/hs/views.py", line 103, in set_challenge_result
+  File "/home/mark/mywww/esports/hs/views.py", line 103, in attacker_set_challenge_result
     c_challenge = get_object_or_404(Challenge, id=request.GET['in_challenge_id'])
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 319, in __getitem__
     raise MultiValueDictKeyError(repr(key))
@@ -1423,7 +1423,7 @@ Traceback (most recent call last):
     return view_func(request, *args, **kwargs)
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
     return view_func(request, *args, **kwargs)
-  File "/home/mark/mywww/esports/hs/views.py", line 111, in set_challenge_result
+  File "/home/mark/mywww/esports/hs/views.py", line 111, in attacker_set_challenge_result
     Challenge.set_results(challenge, result)
   File "/home/mark/mywww/esports/hs/models.py", line 73, in set_results
     self.result = in_result
@@ -1436,7 +1436,7 @@ Traceback (most recent call last):
     return view_func(request, *args, **kwargs)
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
     return view_func(request, *args, **kwargs)
-  File "/home/mark/mywww/esports/hs/views.py", line 105, in set_challenge_result
+  File "/home/mark/mywww/esports/hs/views.py", line 105, in attacker_set_challenge_result
     challenge = Challenge.objects.get(request.POST['challenge'])
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/db/models/manager.py", line 92, in manager_method
     return getattr(self.get_queryset(), name)(*args, **kwargs)
@@ -1461,7 +1461,7 @@ Traceback (most recent call last):
     return view_func(request, *args, **kwargs)
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
     return view_func(request, *args, **kwargs)
-  File "/home/mark/mywww/esports/hs/views.py", line 111, in set_challenge_result
+  File "/home/mark/mywww/esports/hs/views.py", line 111, in attacker_set_challenge_result
     Challenge.set_results(challenge, result)
   File "/home/mark/mywww/esports/hs/models.py", line 73, in set_results
     self.result = in_result
@@ -1481,7 +1481,7 @@ Traceback (most recent call last):
     return view_func(request, *args, **kwargs)
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
     return view_func(request, *args, **kwargs)
-  File "/home/mark/mywww/esports/hs/views.py", line 118, in set_challenge_result
+  File "/home/mark/mywww/esports/hs/views.py", line 118, in attacker_set_challenge_result
     c_challenge = get_object_or_404(Challenge, id=request.GET['in_challenge_id'])
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 319, in __getitem__
     raise MultiValueDictKeyError(repr(key))
@@ -1490,7 +1490,7 @@ Internal Server Error: /hs/my/set_result/
 Traceback (most recent call last):
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 130, in get_response
     % (callback.__module__, view_name))
-ValueError: The view hs.views.set_challenge_result didn't return an HttpResponse object. It returned None instead.
+ValueError: The view hs.views.attacker_set_challenge_result didn't return an HttpResponse object. It returned None instead.
 Internal Server Error: /hs/my/
 Traceback (most recent call last):
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/handlers/base.py", line 111, in get_response
@@ -1543,7 +1543,7 @@ Traceback (most recent call last):
     return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/core/urlresolvers.py", line 468, in _reverse_with_prefix
     (lookup_view_s, args, kwargs, len(patterns), patterns))
-NoReverseMatch: Reverse for 'set_challenge_result' with arguments '()' and keyword arguments '{}' not found. 1 pattern(s) tried: [u'hs/my/set_result/(?P<challenge_id>\\d+)/$']
+NoReverseMatch: Reverse for 'attacker_set_challenge_result' with arguments '()' and keyword arguments '{}' not found. 1 pattern(s) tried: [u'hs/my/set_result/(?P<challenge_id>\\d+)/$']
 Not Found: /favicon.ico
 Not Found: /favicon.ico
 Internal Server Error: /hs/my/set_result/
@@ -1554,7 +1554,7 @@ Traceback (most recent call last):
     return view_func(request, *args, **kwargs)
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
     return view_func(request, *args, **kwargs)
-  File "/home/mark/mywww/esports/hs/views.py", line 105, in set_challenge_result
+  File "/home/mark/mywww/esports/hs/views.py", line 105, in attacker_set_challenge_result
     if not form.is_bound():
 TypeError: 'bool' object is not callable
 Internal Server Error: /hs/my/set_result/
@@ -1572,7 +1572,7 @@ Traceback (most recent call last):
     return view_func(request, *args, **kwargs)
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
     return view_func(request, *args, **kwargs)
-  File "/home/mark/mywww/esports/hs/views.py", line 111, in set_challenge_result
+  File "/home/mark/mywww/esports/hs/views.py", line 111, in attacker_set_challenge_result
     challenge = Challenge.objects.get(pk=request.POST['challenge'])
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 319, in __getitem__
     raise MultiValueDictKeyError(repr(key))
@@ -1592,7 +1592,7 @@ Traceback (most recent call last):
     return view_func(request, *args, **kwargs)
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
     return view_func(request, *args, **kwargs)
-  File "/home/mark/mywww/esports/hs/views.py", line 111, in set_challenge_result
+  File "/home/mark/mywww/esports/hs/views.py", line 111, in attacker_set_challenge_result
     challenge = Challenge.objects.get(pk=request.POST['challenge'])
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 319, in __getitem__
     raise MultiValueDictKeyError(repr(key))
@@ -1612,7 +1612,7 @@ Traceback (most recent call last):
     return view_func(request, *args, **kwargs)
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
     return view_func(request, *args, **kwargs)
-  File "/home/mark/mywww/esports/hs/views.py", line 105, in set_challenge_result
+  File "/home/mark/mywww/esports/hs/views.py", line 105, in attacker_set_challenge_result
     if request.POST['in_challenge_id']:
   File "/home/mark/mywww/env/lib/python3.4/site-packages/django/utils/datastructures.py", line 319, in __getitem__
     raise MultiValueDictKeyError(repr(key))
